@@ -80,11 +80,12 @@ body {
     border: none;
     font-size: 1rem;
     margin-bottom: 0.8rem;
+    color: white;
+    cursor: pointer;
 }
 
-.primary-button a {
+.section a {
     text-decoration: none;
-    color: white;
 }
 
 .secondary-button {
@@ -93,11 +94,12 @@ body {
     font-size: 1rem;
     margin-bottom: 0.8rem;
     border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
-.secondary-button a {
+.section a {
     text-decoration: none;
-    color: var(--primary-color);
 }
 
 .footer-container {
