@@ -69,6 +69,10 @@ body {
     font-size: 2rem;
 }
 
+.section p {
+    text-align: start;
+}
+
 .ow {
     background-color: var(--offwhite);
 }
