@@ -1,3 +1,5 @@
+/* CSS common to all pages */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
@@ -14,7 +16,7 @@ body {
     margin: 0;
 }
 
-.header-container {
+.header {
     background-color: var(--primary-color);
     color: white;
     padding: 2rem 0rem;
@@ -22,38 +24,43 @@ body {
     border-radius: 0 0 1rem 1rem;
 }
 
-.header-title {
+.header__title {
     margin-top: 0px;
     padding: 1rem 0rem;
     font-size: xx-large;
 }
 
-.links-container {
+.nav {
     padding: 0;
 }
 
-.links-inline {
+.nav__listItem {
     display: inline;
     margin-bottom: 2rem;
-    font-size: large;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
-.header-links {
+.nav__link {
     text-decoration: none;
     color: white;
     margin: 0 1rem;
 }
 
-.img {
+.profilePic {
+    display: block;
+    margin: 3rem auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.heroImage {
     display: block;
     margin: 3rem auto;
     width: 60%;
     max-width: 24rem;
-}
-
-.align-centre {
-    text-align: center;
 }
 
 .section {
@@ -61,39 +68,48 @@ body {
     width: 90%;
     max-width: 45rem;
     padding: 0.5rem 5vw;
+    padding-bottom: 0.8rem;
     border-radius: 0.8rem;
 }
 
-.section h2 {
+.section--centre {
+    text-align: center;
+}
+
+.section__title {
     color: var(--primary-color);
     font-size: 2rem;
 }
 
-.section p {
+.section__text {
     text-align: start;
+    font-size: 1.1rem;
+    /* margin-bottom: 1rem; */
 }
 
-.ow {
+.section--color {
     background-color: var(--offwhite);
 }
 
-.primary-button {
+.section__link {
+    text-decoration: none;
+}
+
+/* pending changes in css bem from here */
+
+.primaryButton {
     padding: 0.5rem 1rem;
     border-radius: 0.8rem;
     background-color: var(--primary-color);
     border: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 0.8rem;
     color: white;
     cursor: pointer;
     margin-right: 1rem;
 }
 
-.section a {
-    text-decoration: none;
-}
-
-.secondary-button {
+.secondaryButton {
     padding: 0.5rem 1rem;
     border-radius: 0.8rem;
     font-size: 1rem;
@@ -103,11 +119,7 @@ body {
     cursor: pointer;
 }
 
-.section a {
-    text-decoration: none;
-}
-
-.footer-container {
+.footer {
     background-color: var(--primary-color);
     color: white;
     padding: 2rem 4rem;
@@ -115,10 +127,29 @@ body {
     border-radius: 1rem 1rem 0 0;
 }
 
-.small-image-size {
+.footer__title {
+    text-align: center;
+}
+
+.footer__link {
+    margin: 0 1rem;
+}
+
+.footer__icon {
     width: 2rem;
 }
 
-.social-container a {
-    margin: 0 1rem;
+@media screen and (max-width: 475px) {
+    .nav__listItem {
+        font-size: 1.1rem;
+    }
+
+    .profilePic {
+        width: 240px;
+        height: 240px;
+    }
+
+    .section__text {
+        font-size: 1rem;
+    }
 }

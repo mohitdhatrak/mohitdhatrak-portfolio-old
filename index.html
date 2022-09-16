@@ -5,83 +5,113 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mohit Dhatrak</title>
-        <link rel="shortcut icon" href="/favicon-green.png" type="image/png" />
+        <link
+            rel="shortcut icon"
+            href="/assets/favicon-green.png"
+            type="image/png"
+        />
         <link rel="stylesheet" href="/styles.css" />
     </head>
+
     <body>
-        <header class="header-container">
-            <h1 class="header-title">Mohit Dhatrak</h1>
-            <ul class="links-container">
-                <li class="links-inline">
-                    <a class="header-links" href="/projects.html">Projects</a>
+        <header class="header">
+            <h1 class="header__title">Mohit Dhatrak</h1>
+            <ul class="nav">
+                <li class="nav__listItem">
+                    <a class="nav__link" href="/projects.html">Projects</a>
                 </li>
-                <li class="links-inline">
-                    <a class="header-links" href="/blogs.html">Blogs</a>
+                <li class="nav__listItem">
+                    <a class="nav__link" href="/blogs.html">Blogs</a>
                 </li>
-                <li class="links-inline">
-                    <a class="header-links" href="#connect-with-me"
+                <li class="nav__listItem">
+                    <a class="nav__link" href="#connect-with-me"
                         >Let's connect</a
                     >
                 </li>
             </ul>
         </header>
 
-        <section>
-            <img class="img" src="/heroimage.svg" alt="" />
-        </section>
+        <main>
+            <img
+                class="profilePic"
+                src="/assets/profile-pic.jpeg"
+                alt="Home page profile picture"
+            />
 
-        <section class="align-centre section ow">
-            <h2>About Me</h2>
-            <p>
-                Hi folks, I'm Mohit, a first year undergraduate student and I'm
-                interested in learning how to code. I am fond of watching and
-                playing various sports and a big fan of test cricket.
-            </p>
-        </section>
+            <section class="section section--centre section--color">
+                <h2 class="section__title">About Me</h2>
+                <p class="section__text">
+                    An undergrad majoring in Computer Science and Engineering.
+                    Passionate full-stack developer skilled in JavaScript and
+                    React, seeking opportunities to contribute and grow. Apart
+                    from exploring new technologies, I'm also a sports
+                    enthusiast!
+                </p>
+                <a
+                    href="https://drive.google.com/file/d/1SvMk3nsB-CqaGtpSyQm9s5WTsY8Yht35/view?usp=drivesdk"
+                    class="section__link"
+                    target="_blank"
+                >
+                    <button class="primaryButton">View Resume</button>
+                </a>
+            </section>
 
-        <section class="align-centre section ow">
-            <h2>My Projects</h2>
-            <p>
-                Making projects is fun and it helps in cementing what I have
-                learned. You can check out my projects here.
-            </p>
-            <a href="/projects.html">
-                <button class="primary-button">Projects</button>
-            </a>
-        </section>
+            <section class="section section--centre section--color">
+                <h2 class="section__title">My Projects</h2>
+                <p class="section__text">
+                    Making projects is fun and it helps in cementing what I have
+                    learned. You can check out my projects here.
+                </p>
+                <a href="/projects.html" class="section__link">
+                    <button class="primaryButton">Browse Projects</button>
+                </a>
+            </section>
 
-        <section class="align-centre section ow">
-            <h2>My Blogs</h2>
-            <p>
-                Blogging helps me understand the concepts better, explore the
-                nuances of the topic and enables me to share what I have learned
-                with others. You can read my blogs here.
-            </p>
-            <a href="/blogs.html">
-                <button class="primary-button">Read Blogs</button>
-            </a>
-        </section>
+            <section class="section section--centre section--color">
+                <h2 class="section__title">My Blogs</h2>
+                <p class="section__text">
+                    Blogging helps me understand the concepts better, explore
+                    the nuances of the topic and enables me to share what I have
+                    learned with others. You can read my blogs here.
+                </p>
+                <a href="/blogs.html" class="section__link">
+                    <button class="primaryButton">Read Blogs</button>
+                </a>
+            </section>
+        </main>
 
-        <footer id="connect-with-me" class="footer-container">
-            <h2 class="align-centre">Connect with me</h2>
-            <div class="social-container">
+        <footer id="connect-with-me" class="footer">
+            <h2 class="footer__title">Connect with me</h2>
+            <div>
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://twitter.com/mohitdhatrak"
-                    ><img src="/twitter.svg" alt="" class="small-image-size"
+                    class="footer__link"
+                    ><img
+                        src="/assets/twitter.svg"
+                        alt="Twitter"
+                        class="footer__icon"
                 /></a>
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/mohitdhatrak/"
-                    ><img src="/linkedin.svg" alt="" class="small-image-size"
+                    class="footer__link"
+                    ><img
+                        src="/assets/linkedin.svg"
+                        alt="LinkedIn"
+                        class="footer__icon"
                 /></a>
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://github.com/mohitdhatrak"
-                    ><img src="/github.svg" alt="" class="small-image-size"
+                    class="footer__link"
+                    ><img
+                        src="/assets/github.svg"
+                        alt="GitHub"
+                        class="footer__icon"
                 /></a>
             </div>
         </footer>
