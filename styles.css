@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
-    --primary-color: #059669;
-    --offwhite: #eaebec;
+    --primary-color: #008037;
+    --secondary-color: #eaebec;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
 
 .header {
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
     padding: 2rem 0rem;
     text-align: center;
     border-radius: 0 0 1rem 1rem;
@@ -27,7 +27,6 @@ body {
 .header__title {
     margin-top: 0px;
     padding: 1rem 0rem;
-    font-size: xx-large;
 }
 
 .nav {
@@ -43,7 +42,7 @@ body {
 
 .nav__link {
     text-decoration: none;
-    color: white;
+    color: #fff;
     margin: 0 1rem;
 }
 
@@ -78,33 +77,32 @@ body {
 
 .section__title {
     color: var(--primary-color);
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin: 1rem 0;
 }
 
 .section__text {
     text-align: start;
     font-size: 1.1rem;
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1.3rem;
 }
 
 .section--color {
-    background-color: var(--offwhite);
+    background-color: var(--secondary-color);
 }
 
 .section__link {
     text-decoration: none;
 }
 
-/* pending changes in css bem from here */
-
 .primaryButton {
     padding: 0.5rem 1rem;
     border-radius: 0.8rem;
     background-color: var(--primary-color);
+    color: #fff;
     border: none;
     font-size: 1.1rem;
     margin-bottom: 0.8rem;
-    color: white;
     cursor: pointer;
     margin-right: 1rem;
 }
@@ -121,7 +119,7 @@ body {
 
 .footer {
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
     padding: 2rem 4rem;
     text-align: center;
     border-radius: 1rem 1rem 0 0;
@@ -147,6 +145,10 @@ body {
     .profilePic {
         width: 240px;
         height: 240px;
+    }
+
+    .section__title {
+        font-size: 1.5rem;
     }
 
     .section__text {
