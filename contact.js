@@ -66,6 +66,9 @@ function validateForm() {
         outputText.innerText = "Form submitted successfully!";
         submitBtn.style.display = "none";
         resetBtn.style.display = "inline";
+        personName.disabled = true;
+        emailID.disabled = true;
+        phoneNum.disabled = true;
 
         // resets the form fields and clears the message in 3 secs
         // setTimeout(() => {
@@ -80,6 +83,10 @@ function resetForm() {
     outputText.style.display = "none";
     formData.reset();
     submitBtn.style.display = "inline";
+
+    personName.disabled = false;
+    emailID.disabled = false;
+    phoneNum.disabled = false;
 }
 
 formData.addEventListener("submit", validateForm);
