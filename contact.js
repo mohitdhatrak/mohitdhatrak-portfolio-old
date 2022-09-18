@@ -3,10 +3,14 @@ let phoneNum = document.querySelector("#phone-number");
 let emailID = document.querySelector("#email-address");
 let formData = document.querySelector("#contact-me-form");
 let submitBtn = document.querySelector("#submit-button");
+let resetBtn = document.querySelector("#reset-button");
 let outputText = document.querySelector("#output-text");
+
+resetBtn.style.display = "none";
 
 function validateForm() {
     outputText.style.color = "#b91c1c";
+    outputText.style.display = "block";
 
     // name validation
     // just checking if user is entering atleast 1 character not just blank spaces
@@ -58,17 +62,25 @@ function validateForm() {
 
     // if all compulsory fields are filled correctly
     else {
-        submitBtn.disabled = true;
         outputText.style.color = "#008037";
         outputText.innerText = "Form submitted successfully!";
+        submitBtn.style.display = "none";
+        resetBtn.style.display = "inline";
 
-        // resets the form fields and clears the message in 2.5 secs
-        setTimeout(() => {
-            formData.reset();
-            outputText.innerText = "";
-            submitBtn.disabled = false;
-        }, 2500);
+        // resets the form fields and clears the message in 3 secs
+        // setTimeout(() => {
+        //     formData.reset();
+        //     outputText.innerText = "";
+        // }, 3000);
     }
 }
 
+function resetForm() {
+    resetBtn.style.display = "none";
+    outputText.style.display = "none";
+    formData.reset();
+    submitBtn.style.display = "inline";
+}
+
 formData.addEventListener("submit", validateForm);
+resetBtn.addEventListener("click", resetForm);

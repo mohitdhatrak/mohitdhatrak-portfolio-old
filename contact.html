@@ -49,7 +49,7 @@
                     class="form"
                 >
                     <div>
-                        <label for="name" class="input-label"
+                        <label for="name" class="inputLabel"
                             >Name<span class="requiredField">*</span> :
                         </label>
                         <input
@@ -62,7 +62,7 @@
                         />
                     </div>
                     <div>
-                        <label for="email-address" class=""
+                        <label for="email-address" class="inputLabel"
                             >Email<span class="requiredField">*</span> :
                         </label>
                         <input
@@ -75,7 +75,7 @@
                         />
                     </div>
                     <div>
-                        <label for="phone-number" class="input-label"
+                        <label for="phone-number" class="inputLabel"
                             >Phone :
                         </label>
                         <input
@@ -87,12 +87,14 @@
                         />
                     </div>
 
-                    <div id="output-text"></div>
+                    <div id="output-text" class="outputMsg" hidden></div>
 
                     <button type="submit" id="submit-button" class="submitBtn">
                         Submit
                     </button>
                 </form>
+
+                <button id="reset-button" class="resetBtn">Reset form</button>
 
                 <p class="section__text">
                     <span class="requiredField">*</span> marked fields are
@@ -103,7 +105,7 @@
                     <strong>Note:</strong> This page is not complete yet, only
                     'Form Validation' is working (frontend). Even if you submit
                     the data, I am not storing it anywhere for now, so I won't
-                    get any notifications about form submissions.
+                    get any data or notifications about form submissions.
                 </p>
             </section>
         </main>

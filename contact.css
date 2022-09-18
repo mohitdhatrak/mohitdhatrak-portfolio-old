@@ -1,23 +1,57 @@
-/* .form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-} */
-
-.name,
-.phoneNumber,
-.emailAddress {
-    display: inline-block;
-    margin: 1rem auto;
-    width: 70%;
-    max-width: 20rem;
+:root {
+    --primary-color: #008037;
 }
 
-.submitBtn {
-    display: block;
-    margin: 0 auto;
+.inputLabel {
+    font-size: 1.1rem;
 }
 
 .requiredField {
     color: #ff0000;
+}
+
+.name,
+.phoneNumber,
+.emailAddress {
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin: 1rem 0.5rem;
+    width: 70%;
+    max-width: 20rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--primary-color);
+}
+
+.outputMsg {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.submitBtn,
+.resetBtn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 475px) {
+    .inputLabel {
+        font-size: 1rem;
+    }
+
+    .name,
+    .phoneNumber,
+    .emailAddress {
+        font-size: 0.9rem;
+    }
+
+    .outputMsg {
+        font-size: 1.1rem;
+    }
 }
