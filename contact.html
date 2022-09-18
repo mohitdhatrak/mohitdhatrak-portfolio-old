@@ -40,15 +40,71 @@
             <h1 class="pageTitle">Contact me</h1>
 
             <section class="section section--centre section--color">
-                <h2 class="section__title">For queries or feedback</h2>
+                <h2 class="section__title">For queries or suggestions</h2>
 
-                <form action="">
-                    <input type="text" name="" id="" />
-                    <input type="text" name="" id="" />
-                    <input type="email" name="" id="" />
+                <form
+                    name="form"
+                    id="contact-me-form"
+                    onsubmit="return false"
+                    class="form"
+                >
+                    <div>
+                        <label for="name" class="input-label"
+                            >Name<span class="requiredField">*</span> :
+                        </label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Enter your name"
+                            class="name"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="email-address" class=""
+                            >Email<span class="requiredField">*</span> :
+                        </label>
+                        <input
+                            type="text"
+                            name="email"
+                            id="email-address"
+                            placeholder="Enter your email address"
+                            class="emailAddress"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="phone-number" class="input-label"
+                            >Phone :
+                        </label>
+                        <input
+                            type="text"
+                            name="phone"
+                            id="phone-number"
+                            placeholder="Enter your phone number"
+                            class="phoneNumber"
+                        />
+                    </div>
 
-                    <button type="submit"></button>
+                    <div id="output-text"></div>
+
+                    <button type="submit" id="submit-button" class="submitBtn">
+                        Submit
+                    </button>
                 </form>
+
+                <p class="section__text">
+                    <span class="requiredField">*</span> marked fields are
+                    compulsory
+                </p>
+
+                <p class="section__text">
+                    <strong>Note:</strong> This page is not complete yet, only
+                    'Form Validation' is working (frontend). Even if you submit
+                    the data, I am not storing it anywhere for now, so I won't
+                    get any notifications about form submissions.
+                </p>
             </section>
         </main>
 
@@ -87,5 +143,7 @@
                 /></a>
             </div>
         </footer>
+
+        <script src="/contact.js"></script>
     </body>
 </html>
