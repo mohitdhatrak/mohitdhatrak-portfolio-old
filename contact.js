@@ -47,7 +47,8 @@ function validateForm() {
         emailID.value.includes(".@") ||
         emailID.value.includes("@-")
     ) {
-        outputText.innerText = "Please enter a valid email address!";
+        outputText.innerText =
+            "Please enter a valid email address! \n(for example - john.doe123@company-name.com) ";
         document.form.email.focus();
     }
 
@@ -56,7 +57,8 @@ function validateForm() {
         phoneNum.value.trim() !== "" &&
         !regexPhone.test(phoneNum.value.trim())
     ) {
-        outputText.innerText = "Please enter a valid phone number!";
+        outputText.innerText =
+            "Please enter a valid phone number! \n(valid formats eg.: 9987654321 or 99876 54321 or 09987654321 or +919987654321 or +91 99876 54321)";
         document.form.phone.focus();
     }
 
