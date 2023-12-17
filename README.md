@@ -3,6 +3,8 @@
 
 <img align="right"  alt="coding" width="420" src="./assets/readme-gif.gif">
 
+<br>
+
 <p align="left">
 <img src="https://komarev.com/ghpvc/?username=mohitdhatrak&label=Profile%20views&color=0e75b6&style=flat"
     alt="mohitdhatrak" />
@@ -11,7 +13,7 @@
 <br>
 
 -   🎓 **Computer Engineering undergrad.**
--   🚀 **Frontend developer Intern** at **Platform Commons.**
+-   🚀 **Frontend Developer Intern** at **Platform Commons.**
 -   🌱 I’m currently learning **Typescript, Angular**
 -   📫 Reach out to me at **msdhatrak25@gmail.com**
 
