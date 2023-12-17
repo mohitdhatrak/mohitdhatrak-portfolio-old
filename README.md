@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Mohit</h1>
 <h3 align="center">A passionate full-stack developer</h3>
 
-<img align="right" alt="coding" width="420" src="./assets/readme-gif.gif">
+<img align="right" alt="coding" width="320" src="./assets/readme-gif.gif">
 
 <p align="left">
 <img src="https://komarev.com/ghpvc/?username=mohitdhatrak&label=Profile%20views&color=0e75b6&style=flat"
@@ -53,10 +53,9 @@
 
 ![](https://github-contributor-stats.vercel.app/api?username=mohitdhatrak&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
-The snake's eating up my contributions 🐍.
+🐍 The snake's eating up my contributions
 
 <p align="center">
 <img  src="https://raw.githubusercontent.com/Elanza-48/Elanza-48/main/resources/img/github-contribution-grid-snake.svg"
-    alt="example" />
+    alt="Snake eating contributions" />
 </p>
-<br>
