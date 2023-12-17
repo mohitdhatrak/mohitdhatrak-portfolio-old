@@ -1,151 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact | Mohit Dhatrak</title>
-        <link
-            rel="shortcut icon"
-            href="/assets/favicon-green.png"
-            type="image/png"
-        />
-        <link rel="stylesheet" href="/styles.css" />
-        <link rel="stylesheet" href="/contact.css" />
-    </head>
 
-    <body>
-        <header class="header">
-            <h1 class="header__title">Mohit Dhatrak</h1>
-            <ul class="nav">
-                <li class="nav__listItem">
-                    <a class="nav__link" href="/index.html">Home</a>
-                </li>
-                <li class="nav__listItem">
-                    <a class="nav__link" href="/projects.html">Projects</a>
-                </li>
-                <li class="nav__listItem">
-                    <a class="nav__link" href="/blogs.html">Blogs</a>
-                </li>
-            </ul>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Mohit Dhatrak</title>
+    <link rel="shortcut icon" href="/assets/favicon-green.png" type="image/png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/contact.css" />
+</head>
 
-        <main>
-            <img
-                class="heroImage"
-                src="/assets/contacthero.svg"
-                alt="Blogs page hero-image"
-            />
+<body>
+    <header class="header">
+        <h1 class="header__title">Mohit Dhatrak</h1>
+        <ul class="nav">
+            <li class="nav__listItem">
+                <a class="nav__link" href="/index.html">Home</a>
+            </li>
+            <li class="nav__listItem">
+                <a class="nav__link" href="/projects.html">Projects</a>
+            </li>
+            <li class="nav__listItem">
+                <a class="nav__link" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </header>
 
-            <h1 class="pageTitle">Contact me</h1>
+    <main>
+        <img class="heroImage" src="/assets/contacthero.svg" alt="Blogs page hero-image" />
 
-            <section class="section section--centre section--color">
-                <h2 class="section__title">For queries or suggestions</h2>
+        <h1 class="pageTitle">Contact me</h1>
 
-                <form
-                    name="form"
-                    id="contact-me-form"
-                    onsubmit="return false"
-                    class="form"
-                >
-                    <div>
-                        <label for="name" class="inputLabel"
-                            >Name<span class="requiredField">*</span> :
-                        </label>
-                        <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            placeholder="Enter your name"
-                            class="name"
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label for="email-address" class="inputLabel"
-                            >Email<span class="requiredField">*</span> :
-                        </label>
-                        <input
-                            type="text"
-                            name="email"
-                            id="email-address"
-                            placeholder="Enter your email address"
-                            class="emailAddress"
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label for="phone-number" class="inputLabel"
-                            >Phone :
-                        </label>
-                        <input
-                            type="text"
-                            name="phone"
-                            id="phone-number"
-                            placeholder="Enter your phone number"
-                            class="phoneNumber"
-                        />
-                    </div>
+        <section class="section section--centre section--color">
+            <h2 class="section__title">For queries or suggestions</h2>
 
-                    <div id="output-text" class="outputMsg" hidden></div>
+            <form name="form" id="contact-me-form" onsubmit="return false" class="form">
+                <div>
+                    <label for="name" class="inputLabel">Name<span class="requiredField">*</span> :
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="name" required />
+                </div>
+                <div>
+                    <label for="email-address" class="inputLabel">Email<span class="requiredField">*</span> :
+                    </label>
+                    <input type="text" name="email" id="email-address" placeholder="Enter your email address"
+                        class="emailAddress" required />
+                </div>
+                <div>
+                    <label for="phone-number" class="inputLabel">Phone :
+                    </label>
+                    <input type="text" name="phone" id="phone-number" placeholder="Enter your phone number"
+                        class="phoneNumber" />
+                </div>
 
-                    <button type="submit" id="submit-button" class="submitBtn">
-                        Submit
-                    </button>
-                </form>
+                <div id="output-text" class="outputMsg" hidden></div>
 
-                <button id="reset-button" class="resetBtn">Reset form</button>
+                <button type="submit" id="submit-button" class="submitBtn">
+                    Submit
+                </button>
+            </form>
 
-                <p class="section__text">
-                    <span class="requiredField">*</span> marked fields are
-                    compulsory
-                </p>
+            <button id="reset-button" class="resetBtn">Reset form</button>
 
-                <p class="section__text">
-                    <strong>Note:</strong> This page is not complete yet, only
-                    'Form Validation' is working (frontend). Even if you submit
-                    the data, I am not storing it anywhere for now, so I won't
-                    get any data or notifications about form submissions.
-                </p>
-            </section>
-        </main>
+            <p class="section__text">
+                <span class="requiredField">*</span> marked fields are
+                compulsory
+            </p>
 
-        <footer class="footer">
-            <h2 class="footer__title">Connect with me</h2>
-            <div>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://twitter.com/mohitdhatrak"
-                    class="footer__link"
-                    ><img
-                        src="/assets/twitter.svg"
-                        alt="Twitter"
-                        class="footer__icon"
-                /></a>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.linkedin.com/in/mohitdhatrak/"
-                    class="footer__link"
-                    ><img
-                        src="/assets/linkedin.svg"
-                        alt="LinkedIn"
-                        class="footer__icon"
-                /></a>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/mohitdhatrak"
-                    class="footer__link"
-                    ><img
-                        src="/assets/github.svg"
-                        alt="GitHub"
-                        class="footer__icon"
-                /></a>
-            </div>
-        </footer>
+            <p class="section__text">
+                <strong>Note:</strong> This page is not complete yet, only
+                'Form Validation' is working (frontend). Even if you submit
+                the data, I am not storing it anywhere for now, so I won't
+                get any data or notifications about form submissions.
+            </p>
+        </section>
+    </main>
 
-        <script src="/contact.js"></script>
-    </body>
+    <footer class="footer">
+        <h2 class="footer__title">Connect with me</h2>
+        <div>
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/mohitdhatrak"
+                class="footer__link"><img src="/assets/twitter.svg" alt="Twitter" class="footer__icon" /></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mohitdhatrak/"
+                class="footer__link"><img src="/assets/linkedin.svg" alt="LinkedIn" class="footer__icon" /></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/mohitdhatrak"
+                class="footer__link"><img src="/assets/github.svg" alt="GitHub" class="footer__icon" /></a>
+        </div>
+    </footer>
+
+    <script src="/contact.js"></script>
+</body>
+
 </html>
