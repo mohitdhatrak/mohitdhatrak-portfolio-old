@@ -13,8 +13,8 @@
 <br>
 
 -   🎓 **Computer Engineering undergrad.**
--   🚀 **Frontend Developer Intern** at **Platform Commons.**
--   🌱 I’m currently learning **Typescript, Angular**
+-   🚀 **Ex-Frontend Developer Intern** at **Platform Commons.**
+-   🌱 I’m currently focusing on **DSA and personal projects**
 -   📫 Reach out to me at **msdhatrak25@gmail.com**
 
 ## 🌐 Socials:
