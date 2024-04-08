@@ -13,7 +13,7 @@
 <br>
 
 -   🎓 **Computer Engineering undergrad.**
--   🚀 **Ex-Frontend Developer Intern** at **Platform Commons.**
+-   🚀 **Ex-SDE Intern** at **Platform Commons.**
 -   🌱 I’m currently focusing on **DSA and personal projects**
 -   📫 Reach out to me at **msdhatrak25@gmail.com**
 
