@@ -13,7 +13,7 @@
 <br>
 
 -   🎓 **Computer Engineering undergrad**
--   🚀 **SDE Intern** at **[CSSBattle](https://github.com/cssbattle)** | **Ex-SDE Intern** at **Platform Commons**
+-   🚀 **SDE Intern** **@[CSSBattle](https://github.com/cssbattle)** | **Ex-SDE Intern** **@PlatformCommons**
 -   🌱 I’m currently focusing on **DSA and personal projects**
 -   📫 Reach out to me at **msdhatrak25@gmail.com**
 
